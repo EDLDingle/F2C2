@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<canvas id="canvas1" width="300" height="150" style="border:1px solid grey"></canvas>
+<canvas id="canvas2" width="300" heigth="150" style="border:1px solid grey"></canvas>
+<script>
+const a=document.getElementById("canvas1");
+const b=document.getElementById("canvas2");
+const cta=a.getContext("2d");
+const ctb=b.getContext("2d");
+cta.beginPath();
+cta.moveTo(20,20);
+cta.lineTo(60,20);
+cta.lineTo(40,70);
+cta.lineTo(20,20);
+cta.strokeStyle="black";
+cta.stroke();
+ctb.beginPath();
+ctb.arc(150,45,25,0,2*Math.PI);
+ctb.strokeStyle="black";
+ctb.stroke();
+</script>
+</body>
+</html>
